@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${file}"
+      
+      {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": true,
+          "source.fixAll.tslint": true,
+          "source.organizeImports": true
+        },
+        "javascript.validate.enable": false,
+        "typescript.validate.enable": false
+      }
+    }
+  ]
+}
+
