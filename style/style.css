@@ -133,6 +133,9 @@ p {
   text-transform: capitalize;
 }
 
+section {
+  overflow: hidden;
+}
 /* ---------------------------------------
                 Button 
 ---------------------------------------*/
@@ -183,6 +186,47 @@ p {
     transform: rotate(360deg);
   }
 }
+
+@keyframes pageloader {
+  0%, 100% {
+    transform: translateX(-50%);
+  }
+  50%{
+    transform: translateX(50%);
+  }
+}
+
+
+/* Pageloader design */
+/* ----------------------------------
+.pageloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color:var(--dark);
+  z-index: 9999;
+  transition: all 0.3s ease;
+
+} 
+-------------------------------------*/
+
+/* .pageloader.fade-out{
+  opacity: 0;
+}
+
+.pageloader::before{
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100px;
+  background-color:var(--main-color);
+  left: calc(50% - 2px);
+  top: calc(50% - 2px);
+  animation: pageloader 1s linear infinite;
+} */
+
 
 /* ---------------------------------------
             Header Area 
@@ -657,7 +701,7 @@ p {
 /* Footer Area */
 
 .footer {
-  padding: 80px 0;
+  padding: 80px 0 0 0;
   background-image: url("../images/footer-bg.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -719,4 +763,63 @@ p {
   padding: 25px 15px;
   font-size: 14px;
   border-top: 1px solid var(--white);
+}
+
+/* Responsive or Media Queries */
+@media (max-width: 991px) {
+  .testi-item{
+    width: calc(50% - 30px);
+  }
+  .team-item {
+    width: 50%;
+  }
+
+  .team-item:not(:last-child){
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-text h1 {
+    font-size: 50px;
+    line-height: 65px;
+  }
+  .menu-item,
+  .about-text,
+  .about-img {
+    width: 100%;
+  }
+  .about-text h3{
+    font-size: 24px;
+  }
+  .about-img {
+    margin-top: 40px;
+  }
+
+  .menu-item:nth-last-of-type(2):after{
+    border-bottom: 2px dashed var(--dark-light);
+  }
+
+  .testi-item{
+    width: calc(100% - 30px);
+  }
+
+  .footer-item{
+    width: 100%;
+  }
+
+  .footer-item:not(:last-child){
+    margin-bottom: 60px;
+  }
+
+
+@media (max-width: 575px) {
+  .team-item {
+    width: 100%;
+  }
+
+  .team-item:not(:last-child){
+    margin-bottom: 80px;
+  }
+
 }

@@ -1,3 +1,14 @@
+window.addEventListener("load", function () {
+  // // Pageloader
+  // document.querySelector(".pageloader").classList.add("fade-out");
+  // this.setTimeout(function () {
+  //   document.querySelector(".pageloader").getElementsByClassName.display =
+  //     "none";
+  // }, 6000);
+  // Animation Scroll
+  AOS.init();
+});
+
 // ---------------------------------------
 //              Toggler Nav
 // ---------------------------------------
@@ -58,9 +69,8 @@ menuTabs.addEventListener("click", function (e) {
       .querySelector(".menu-tab-content.active")
       .classList.remove("active");
     menuSelector.querySelector(menuName).classList.add("active");
+
+    // Animation for Menu
+    AOS.init();
   }
 });
-
-// ---------------------------------------
-//            Testimonials
-// ---------------------------------------

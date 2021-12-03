@@ -7,10 +7,14 @@
     <title>Dine Out - Resturant</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="style/font-awesome.css" />
+    <link rel="stylesheet" href="style/aos.css" />
     <!-- CSS file -->
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
+    <!-- PageLoader -->
+    <div class="pageloader"></div>
+
     <!-- Header Start -->
     <header class="header">
       <div class="container">
@@ -42,7 +46,7 @@
       <div class="home-bg"></div>
       <div class="cntainer">
         <div class="row min-vh-100 align-items-center">
-          <div class="home-text">
+          <div class="home-text" data-aos="fade-up" data-aos-duration="1000">
             <h1>Dine Out Resturant</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -50,7 +54,7 @@
               officiis iste placeat, cumque eveniet ipsum eaque nulla doloremque
               consequuntur sint odit earum reprehenderit?
             </p>
-            <a href="#" class="btn btn-default">Our Menu</a>
+            <a href="#our-menu" class="btn btn-default">Our Menu</a>
           </div>
         </div>
       </div>
@@ -61,11 +65,11 @@
       <div class="container">
         <div class="row">
           <div class="section-title">
-            <h2 data-title="Our Story">About Us</h2>
+            <h2 data-title="Our Story" data-aos="fade-up">About Us</h2>
           </div>
         </div>
         <div class="row">
-          <div class="about-text">
+          <div class="about-text" data-aos="fade-right">
             <h3>Welcome To Dine Out</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
@@ -83,7 +87,7 @@
             </p>
             <a href="#our-menu" class="btn btn-default">Check Our Menu</a>
           </div>
-          <div class="about-img">
+          <div class="about-img" data-aos="fade-left">
             <div class="img-box">
               <h3>20+ years experiences</h3>
               <img src="images/about-img.jpg" alt="About Images" />
@@ -97,12 +101,12 @@
     <section class="menu-section sec-padding" id="our-menu">
       <div class="container">
         <div class="row">
-          <div class="section-title">
+          <div class="section-title" data-aos="fade-up">
             <h2 data-title="Order Now">Our Menu</h2>
           </div>
         </div>
         <div class="row">
-          <div class="menu-tabs">
+          <div class="menu-tabs" data-aos="fade-up">
             <button
               type="button"
               class="menu-tab-item active"
@@ -123,7 +127,11 @@
         </div>
 
         <!-- Row Menu Tab -->
-        <div class="row menu-tab-content active" id="lunch">
+        <div
+          class="row menu-tab-content active"
+          data-aos="fade-up-right"
+          id="lunch"
+        >
           <div class="menu-item">
             <div class="menu-item-title">
               <img src="images/menu/1.jpg" alt="menu item thumbnail" />
@@ -132,7 +140,7 @@
             <div class="menu-item-price">$40.20</div>
           </div>
 
-          <div class="menu-item">
+          <div class="menu-item" data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="images/menu/2.jpg" alt="menu item thumbnail" />
               <h3>Lunch Item</h3>
@@ -140,7 +148,7 @@
             <div class="menu-item-price">$40.20</div>
           </div>
 
-          <div class="menu-item">
+          <div class="menu-item" data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="images/menu/3.jpg" alt="menu item thumbnail" />
               <h3>Lunch Item</h3>
@@ -148,7 +156,7 @@
             <div class="menu-item-price">$40.20</div>
           </div>
 
-          <div class="menu-item">
+          <div class="menu-item" data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="images/menu/4.jpg" alt="menu item thumbnail" />
               <h3>Lunch Item</h3>
@@ -156,7 +164,7 @@
             <div class="menu-item-price">$40.20</div>
           </div>
 
-          <div class="menu-item">
+          <div class="menu-item" data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="images/menu/5.jpg" alt="menu item thumbnail" />
               <h3>Lunch Item</h3>
@@ -164,7 +172,7 @@
             <div class="menu-item-price">$40.20</div>
           </div>
 
-          <div class="menu-item">
+          <div class="menu-item" data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="images/menu/6.jpg" alt="menu item thumbnail" />
               <h3>Lunch Item</h3>
@@ -172,7 +180,7 @@
             <div class="menu-item-price">$40.20</div>
           </div>
 
-          <div class="menu-item">
+          <div class="menu-item" data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="images/menu/7.jpg" alt="menu item thumbnail" />
               <h3>Lunch Item</h3>
@@ -180,7 +188,7 @@
             <div class="menu-item-price">$40.20</div>
           </div>
 
-          <div class="menu-item">
+          <div class="menu-item" data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="images/menu/8.jpg" alt="menu item thumbnail" />
               <h3>Lunch Item</h3>
@@ -192,7 +200,7 @@
 
         <!-- Dinner Menu Start -->
         <div class="row menu-tab-content" id="dinner">
-          <div class="menu-item">
+          <div class="menu-item" data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="images/menu/1.jpg" alt="menu item thumbnail" />
               <h3>Dinner Item</h3>
@@ -200,7 +208,7 @@
             <div class="menu-item-price">$40.20</div>
           </div>
 
-          <div class="menu-item">
+          <div class="menu-item" data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="images/menu/2.jpg" alt="menu item thumbnail" />
               <h3>Dinner Item</h3>
@@ -208,7 +216,7 @@
             <div class="menu-item-price">$40.20</div>
           </div>
 
-          <div class="menu-item">
+          <div class="menu-item" data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="images/menu/3.jpg" alt="menu item thumbnail" />
               <h3>Dinner Item</h3>
@@ -216,7 +224,7 @@
             <div class="menu-item-price">$40.20</div>
           </div>
 
-          <div class="menu-item">
+          <div class="menu-item" data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="images/menu/4.jpg" alt="menu item thumbnail" />
               <h3>Dinner Item</h3>
@@ -228,7 +236,7 @@
 
         <!-- Drink Menu Start -->
         <div class="row menu-tab-content" id="drink">
-          <div class="menu-item">
+          <div class="menu-item" data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="images/menu/1.jpg" alt="menu item thumbnail" />
               <h3>Drink Item</h3>
@@ -236,7 +244,7 @@
             <div class="menu-item-price">$40.20</div>
           </div>
 
-          <div class="menu-item">
+          <div class="menu-item" data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="images/menu/2.jpg" alt="menu item thumbnail" />
               <h3>Drink Item</h3>
@@ -248,7 +256,7 @@
 
         <!-- Desert Menu Start -->
         <div class="row menu-tab-content" id="desert">
-          <div class="menu-item">
+          <div class="menu-item" data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="images/menu/1.jpg" alt="menu item thumbnail" />
               <h3>Desert Item</h3>
@@ -256,7 +264,7 @@
             <div class="menu-item-price">$40.20</div>
           </div>
 
-          <div class="menu-item">
+          <div class="menu-item" data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="images/menu/2.jpg" alt="menu item thumbnail" />
               <h3>Desert Item</h3>
@@ -275,12 +283,12 @@
       <div class="container">
         <div class="row">
           <div class="section-title">
-            <h2 data-title="Testimonial">Some Feedbacks</h2>
+            <h2 data-title="Testimonial" data-aos="fade-up">Some Feedbacks</h2>
           </div>
         </div>
 
         <div class="row">
-          <div class="testi-item">
+          <div class="testi-item" data-aos="flip-left" data-aos-duration="1000">
             <div class="testi-author">
               <div class="testti-author-name">
                 <h3>Elise Parkine</h3>
@@ -306,7 +314,7 @@
             </div>
           </div>
 
-          <div class="testi-item">
+          <div class="testi-item" data-aos="flip-up" data-aos-duration="1000">
             <div class="testi-author">
               <div class="testti-author-name">
                 <h3>Anna Frank</h3>
@@ -332,7 +340,7 @@
             </div>
           </div>
 
-          <div class="testi-item">
+          <div class="testi-item" data-aos="flip-down" data-aos-duration="1000">
             <div class="testi-author">
               <div class="testti-author-name">
                 <h3>Jhon Doe</h3>
@@ -367,13 +375,13 @@
     <section class="team-section sec-padding" id="team">
       <div class="container">
         <div class="row">
-          <div class="section-title">
+          <div class="section-title" data-aos="fade-up">
             <h2 data-title="Team">Our Chefs</h2>
           </div>
         </div>
 
         <div class="row">
-          <div class="team-item">
+          <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
             <img src="images/team/1.jpg" alt="" />
             <div class="team-item-info">
               <h3>Oliver</h3>
@@ -381,7 +389,7 @@
             </div>
           </div>
 
-          <div class="team-item">
+          <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
             <img src="images/team/2.jpg" alt="" />
             <div class="team-item-info">
               <h3>Oggy</h3>
@@ -389,7 +397,7 @@
             </div>
           </div>
 
-          <div class="team-item">
+          <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
             <img src="images/team/3.jpg" alt="" />
             <div class="team-item-info">
               <h3>Marky</h3>
@@ -405,18 +413,18 @@
     <section class="footer" id="contact">
       <div class="container">
         <div class="row">
-          <div class="footer-item">
+          <div class="footer-item" data-aos="fade-up">
             <h3>Our Location</h3>
             <p>213 Derrick Street Boston, <br />MA 02130 USA</p>
           </div>
-          <div class="footer-item">
+          <div class="footer-item" data-aos="fade-up">
             <h3>Opening Hour</h3>
             <p>
               Monday to Sunday <br />
               08:00 AM to 12:01 AM
             </p>
           </div>
-          <div class="footer-item">
+          <div class="footer-item" data-aos="fade-up">
             <h3>Contact Us</h3>
             <p>+192 345 687</p>
             <p>info@dineout.com</p>
@@ -428,7 +436,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row" data-aos="fade-up">
           <div class="copyright">&copy; 2021 - Designed For Practice.</div>
         </div>
       </div>
@@ -436,6 +444,7 @@
     <!-- Footer Section End-->
 
     <!-- Js file -->
+    <script src="js/aos.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
